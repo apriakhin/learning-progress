@@ -14,7 +14,7 @@ struct LearningProgress: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
+    var url = URL(string: "https://learning-progress.apriakhin.ru/")!
     var name = "LearningProgress"
     var description = "A description of LearningProgress"
     var language: Language { .english }
@@ -22,4 +22,7 @@ struct LearningProgress: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try LearningProgress().publish(withTheme: .foundation)
+try LearningProgress().publish(
+    withTheme: .learningProgress,
+    deployedUsing: .gitHub("apriakhin/learning-progress", branch: "gh-pages")
+)
