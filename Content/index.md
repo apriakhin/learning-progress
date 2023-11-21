@@ -1,1 +1,1 @@
-# Welcome to LearningProgress!
+# Welcome to Learning Progress

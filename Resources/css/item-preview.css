@@ -1,0 +1,52 @@
+.item-preview {
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.item-preview:hover {
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+}
+
+.item-preview a {
+    display: flex;
+    color: inherit;
+    padding: 24px;
+}
+
+.item-preview a:hover {
+    text-decoration: none;
+}
+
+.item-preview .image {
+    flex-shrink: 0;
+    width: 80px;
+    display: flex;
+    margin-right: 24px;
+}
+
+.item-preview .image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.item-preview .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-preview .info .title {
+    display: flex;
+    align-items: center;
+}
+
+.item-preview .info .title h2 {
+    margin: 0;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.item-preview .info .description {
+    margin: 0;
+    margin-top: 16px;
+}

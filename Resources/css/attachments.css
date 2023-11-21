@@ -1,0 +1,14 @@
+.attachments ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.attachments ul > * {
+    margin-right: 16px;
+}
+
+.attachments ul > *:last-of-type {
+    margin-right: 0;
+}
