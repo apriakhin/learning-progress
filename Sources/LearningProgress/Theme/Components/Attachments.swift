@@ -9,8 +9,10 @@ struct Attachments: Component {
         Div {
             List(formatedAttachments) { (type, url) in
                 Link(url: url) {
+                    let className = type == "link" ? "fa-solid fa-file-lines fa-lg" : "fa-brands fa-\(type) fa-lg"
+                    
                     Icon()
-                        .class("fa-brands fa-\(type) fa-lg")
+                        .class(className)
                 }
                 .linkTarget(.blank)
             }
