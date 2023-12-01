@@ -6,4 +6,5 @@
     text-transform: uppercase;
     height: 12px;
     color: var(--text-secondary);
+    flex-shrink: 0;
 }
